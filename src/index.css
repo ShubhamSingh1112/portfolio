@@ -13,6 +13,7 @@ html {
 body {
     background-color: darkslategray;
     min-height: 100vh;
+    overflow-y: overlay;
 }
 
 body::-webkit-scrollbar {
@@ -68,4 +69,23 @@ body::-webkit-scrollbar-button {
 
 .social-icons svg {
     color: #fff;
+}
+
+.banner {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.intro-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-content h1 {
+    font-size: 4rem;
 }
