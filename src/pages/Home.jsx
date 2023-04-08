@@ -10,7 +10,6 @@ export default class Home extends Component {
       <div className="home-wrapper">
         <Introsection />
         <Portfoliogrid />
-        <Aboutsection />
         <Contactform />
       </div>
     )
