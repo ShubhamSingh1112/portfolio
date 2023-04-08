@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
+import Aboutsection from '../components/Aboutsection';
 
-export default class About extends Component {
-  render() {
-    return (
-      <div>About</div>
-    )
-  }
+function About() {
+  return (
+    <>
+    <Aboutsection/>
+    </>
+  )
 }
+
+export default About;
