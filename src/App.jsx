@@ -2,6 +2,7 @@ import React from 'react';
 // import Button from '@mui/material/Button';
 import { Routes, Route } from "react-router-dom";
 import Navbar from '../src/components/Navbar';
+import Footer from './components/footer';
 import Home from "../src/pages/Home";
 import About from "../src/pages/About";
 import Portfolio from "../src/pages/Portfolio";
@@ -19,6 +20,7 @@ function App() {
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Contact" element={<Contact />} />
         </Routes>
+        <Footer />
     </div>
   )
 }

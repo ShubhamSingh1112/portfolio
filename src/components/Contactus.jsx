@@ -20,7 +20,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} className='contactform'>
       <InputLabel>Name</InputLabel>
       <TextField margin="normal" fullWidth id="name" label="Enter Name" variant="outlined" name="user_name" required />
       <InputLabel>Email</InputLabel>

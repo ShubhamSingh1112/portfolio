@@ -1,43 +1,52 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import { Link } from "react-router-dom";
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { projects } from "../api/projectdata";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: '#1A2027',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  color: theme.palette.text.secondary,
+  color: 'white',
 }));
 
 export default function Portfoliogrid() {
   return (
-    <Box sx={{ flexGrow: 1 }} maxWidth="lg" style={{ margin: 'auto' }}>
-      <Grid container spacing={2}>
-        {projects.map(({ id, image, subtitle, title, link }) => {
-          return (
-            <Grid key={id} xs={4}>
-              <Item>
-                <img
-                  className="project-img"
-                  src={image}
-                  alt="content"
-                />
-                <h3>
-                  {subtitle}
-                </h3>
-                <h2>
-                  {title}
-                </h2>
-                <a href={link} target='_blank'>Go To Link</a>
-              </Item>
-            </Grid>
-          );
-        })}
-      </Grid>
+    <>
+    <Box maxWidth="xl" style={{ margin: 'auto', padding: '1rem', textAlign: 'center' }}>
+    <h2 className="light" style={{ textAlign: 'center' }}>My Works</h2>
     </Box>
+      <Box sx={{ flexGrow: 1 }} maxWidth="xl" style={{ margin: 'auto', padding: '0 1rem' }}>
+        <Grid container spacing={2}>
+          {projects.map(({ id, image, subtitle, title, link }) => {
+            return (
+              <Grid key={id} lg={4} md={6} sm={6} xs={12}>
+                <Item>
+                  <img
+                    className="project-img"
+                    src={image}
+                    alt="content"
+                  />
+                  <h3>
+                    {subtitle}
+                  </h3>
+                  <h2>
+                    {title}
+                  </h2>
+                  <a href={link} target='_blank'>Go To Link</a>
+                </Item>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+      <Box maxWidth="xl" sx={{ margin: 'auto', padding: '1rem', textAlign: 'center' }}>
+        <Link to="/Portfolio" className="primary">See All Projects</Link>
+      </Box>
+    </>
   );
 }

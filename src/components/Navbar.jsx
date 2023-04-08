@@ -11,8 +11,12 @@ export default class Navbar extends Component {
       <Box
         sx={{
           width: '100%',
+          top: '0',
+          left: '0',
+          position: 'sticky',
           height: 'auto',
-          backgroundColor: 'primary.dark',
+          backgroundColor: 'rgba(200, 200, 200, 0.4)',
+          backdropFilter: 'blur(10px)',
           flexGrow: 1,
           display: 'flex',
           justifyContent: 'start',
