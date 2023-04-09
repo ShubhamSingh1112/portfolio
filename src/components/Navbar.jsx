@@ -28,14 +28,14 @@ export default class Navbar extends Component {
         }}
       >
         <Box sx={{ p: 1, display: 'flex', flex: '1', borderRight: '1px solid whitesmoke' }}>
-          <Link className="light" to="/">Home</Link>
+          <Link className="light link" to="/">Home</Link>
         </Box>
         <Box sx={{ p: 1, display: 'flex', flex: '1', borderRight: '1px solid whitesmoke' }}>
           <Box>
-            <Link className="light" to="/About">About</Link>
+            <Link className="light link" to="/About">About</Link>
           </Box>
           <Box>
-            <Link className="light" to="/Portfolio">Portfolio</Link>
+            <Link className="light link" to="/Portfolio">Portfolio</Link>
           </Box>
         </Box>
         <Box sx={{ p: 1, display: 'flex', flex: '1', borderRight: '1px solid whitesmoke' }}>
@@ -47,7 +47,7 @@ export default class Navbar extends Component {
             <Link className='social-icons' target='_blank' to="https://www.facebook.com/profile.php?id=100003071391024"><MdFacebook/></Link>
         </Box>
         <Box sx={{ p: 1, display: 'flex', flex: '1' }}>
-          <Link className="light" to="/Contact">Contact</Link>
+          <Link className="light link" to="/Contact">Contact</Link>
         </Box>
       </Box>
     )

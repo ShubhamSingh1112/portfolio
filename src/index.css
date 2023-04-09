@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
@@ -9,6 +10,8 @@
     --indigo: rgb(65, 0, 130);
     --orange: rgb(233, 145, 38);
     --yellow: rgb(233, 224, 38);
+    --heading: 'Bebas Neue', cursive;
+    --text: 'Montserrat', sans-serif;
 }
 
 * {
@@ -20,6 +23,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     position: relative;
 }
 
@@ -48,6 +52,19 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-button {
     display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading);
+}
+
+p, a, span, blockquote {
+    font-family: var(--text);
+}
+
+.link {
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .light {

@@ -6,6 +6,7 @@ function Footer() {
         <>
             <Box style={{ padding: '1.5rem' }}>
                 <footer>
+                    <hr />
                     <p style={{ color: '#fff', textAlign: 'center' }}>&copy; Shubham Singh 2023.</p>
                 </footer>
             </Box>
