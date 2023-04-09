@@ -332,7 +332,7 @@ p, a, span, blockquote {
     color: var(--white);
     transform: translate3d(1, 1, 1) translateZ(30px);
     font-weight: 900;
-    -webkit-text-stroke: 4px var(--white);
+    -webkit-text-stroke: 0.5px var(--white);
     -webkit-text-fill-color: transparent;
 }
 
