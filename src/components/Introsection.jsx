@@ -10,8 +10,9 @@ export default class Introsection extends Component {
         <div className='banner'>
           <Blobs />
           <div className='intro-content'>
+            <p> Hello There! I'm Shubham Singh</p>
             <h1>Frontend Developer</h1>
-            <p>I'm Shubham Singh, a Frontend Developer with expertise in UI design. I'm a creative problem-solver who delivers exceptional user experiences. Having worked on over 100 live projects, my collaborative approach and deadline speciality ensure innovative and efficient results that exceed expectations.</p>
+            <p>An innovative Frontend Developer with a passion for user experience and a knack for bringing designs to life. Having worked on over 100 live projects, my collaborative approach and deadline speciality ensure innovative and efficient results that exceed expectations.</p>
             <Button variant="contained">
               <Link className='light' to='/portfolio'>Portfolio &gt;</Link>
             </Button>
