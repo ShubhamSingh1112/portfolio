@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
@@ -10,7 +10,7 @@
     --indigo: rgb(65, 0, 130);
     --orange: rgb(233, 145, 38);
     --yellow: rgb(233, 224, 38);
-    --heading: 'Bebas Neue', cursive;
+    --heading: 'Jost', sans-serif;
     --text: 'Montserrat', sans-serif;
 }
 
@@ -330,10 +330,7 @@ p, a, span, blockquote {
 .intro-content h1 {
     font-size: 5rem;
     color: var(--white);
-    transform: translate3d(1, 1, 1) translateZ(30px);
-    font-weight: 900;
-    -webkit-text-stroke: 0.5px var(--white);
-    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .contactform {
